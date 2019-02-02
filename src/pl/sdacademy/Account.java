@@ -4,6 +4,7 @@ public class Account {
     private String firstName;
     private String lastName;
     private long account;
+    private long loan;
 
     @Override
     public String toString() {
@@ -36,6 +37,14 @@ public class Account {
 
     public long getAccount() {
         return account;
+    }
+
+    public long getLoan() {
+        return loan;
+    }
+
+    public void setLoan(long loan) {
+        this.loan = loan;
     }
 
     public Account(String firstName, String lastName, long account) {
